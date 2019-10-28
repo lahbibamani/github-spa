@@ -1,0 +1,38 @@
+{
+  "APP": {
+    "TITLE": "Github Dashboard Sample"
+  },
+  "SEARCH": {
+    "TITLE": "Saisir le nom d'utilisateur Github",
+    "PLACEHOLDER": "username...",
+    "SEARCH_BTN": "Rechercher"
+  },
+  "REPOS": {
+    "TITLE": "REPOSITORIES",
+    "RETURN": "Retour",
+    "EMPTY": "Aucun Repository trouvé",
+    "EMPTY_RESULT": "Aucune valeur trouvée",
+    "SEARCH": "nom repo...",
+    "DETAILS": "Details"
+  },
+  "DETAILS": {
+    "LANG": "Langage: ",
+    "EMPTY": "non renseigné",
+    "STARS": " stars",
+    "CREATED": "Créé le : ",
+    "UPDATED": "Dernière mise à jour: "
+  },
+  "footer": {
+    "copyright": "Copyright © 2019 . All rights reserved.",
+    "legal": {
+      "title": "Mentions légales",
+      "close": "Fermer",
+      "mail": "Email :",
+      "editor": {
+        "title": "Editeur",
+        "name": "Amani LAHBIB",
+        "mail": "amani.lahbib@gmail.com"
+      }
+    }
+  }
+}

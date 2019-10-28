@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Calque_1"
+   data-name="Calque 1"
+   viewBox="0 0 512.19 403"
+   version="1.1"
+   sodipodi:docname="statsblue.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata21">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>stats2</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     id="namedview19"
+     showgrid="false"
+     inkscape:zoom="0.58560794"
+     inkscape:cx="-48.716441"
+     inkscape:cy="201.5"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Calque_1" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#fff;}</style>
+  </defs>
+  <title
+     id="title6">stats2</title>
+  <rect
+     class="cls-1"
+     x="265.55"
+     width="115.42"
+     height="358"
+     rx="15.14"
+     id="rect8"
+     style="fill:#ffffff;fill-opacity:1" />
+  <rect
+     class="cls-1"
+     x="131.76"
+     y="62.72"
+     width="115.42"
+     height="295.28"
+     rx="15.14"
+     id="rect10"
+     style="fill:#ffffff;fill-opacity:1" />
+  <rect
+     class="cls-1"
+     x="0.97"
+     y="137.02"
+     width="115.42"
+     height="220.98"
+     rx="15.14"
+     id="rect12"
+     style="fill:#ffffff;fill-opacity:1" />
+  <rect
+     class="cls-1"
+     y="387"
+     width="511.97"
+     height="16"
+     id="rect14"
+     style="fill:#ffffff;fill-opacity:1" />
+  <rect
+     class="cls-1"
+     x="396.76"
+     y="62.72"
+     width="115.42"
+     height="295.28"
+     rx="15.14"
+     id="rect16"
+     style="fill:#ffffff;fill-opacity:1" />
+</svg>

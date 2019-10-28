@@ -1,0 +1,6 @@
+{
+  "apiServer": {
+    "url": "https://api.github.com",
+    "access_token": "b994d57df3d7f8af794657fcc39f4316a01da462"
+  }
+}

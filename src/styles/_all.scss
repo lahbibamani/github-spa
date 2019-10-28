@@ -1,0 +1,377 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif !important;
+    background: #eee !important;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $dark-color;
+    margin-bottom: 0px;
+}
+
+h1,
+.h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+h2,
+.h2 {
+    font-size: 1.4rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.3rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.2rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.1rem;
+}
+
+h6,
+.h6 {
+    font-size: 0.9rem;
+}
+
+.container-fluid {
+    width: 90% !important;
+    @media (max-width: 992px) {
+        width: 100% !important;
+    }
+    @media (max-width: 768px) {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.theme-content {
+    background-color: $white-color;
+    padding: 1.5rem;
+}
+
+.p-15 {
+    padding: 1.5rem !important;
+}
+
+.p-10 {
+    padding: 1rem !important;
+}
+
+.font-size {
+    font-size: 100%;
+}
+
+.flex-end {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    @media (max-width: 768px) {
+        justify-content: flex-start;
+    }
+}
+
+.block-theme,
+.table-header {
+    background-color: #f1f1f1;
+    padding: 1rem 2rem;
+}
+
+
+/***************** Button Up ******************/
+
+// #button-top {
+//   position: fixed;
+//   bottom: 30px;
+//   right: 30px;
+//   border-radius: .1rem;
+//   background-color: rgba($middle-color, 0.8);
+//   @include background-img(20px, 50px, 50px);
+//   background-image: url(assets/images/up-white.svg);
+//   visibility: hidden;
+//   opacity: 0;
+//   transition: background-color .3s, opacity .5s, visibility .5s;
+//   z-index: 20;
+//   &:hover,
+//   &.active {
+//     cursor: pointer;
+//     background-color: $middle-color;
+//   }
+// }
+// #button-top.element-visible {
+//   visibility: visible;
+//   opacity: 1;
+// }
+
+/**************** Title Block ***********************/
+
+.block-title {
+    width: 100%;
+    letter-spacing: 0.5px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: $blue-theme;
+    color: $white-color;
+    padding: 1.5rem;
+    margin-bottom: 0;
+    @media (max-width: 992px) {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+}
+
+// Add a picto in Block-title
+.picto-before {
+    position: relative;
+    padding-left: 70px;
+    font-size: 1.5rem;
+    &:before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        @include background-img(100%, 25px, 25px);
+        margin: 0 15px;
+        z-index: 10;
+    }
+}
+
+
+/*************** Dotted Border/Title *****************/
+
+.dotted-border {
+    position: relative;
+    padding-bottom: .6rem;
+    &:before {
+        content: '';
+        position: absolute;
+        right: 50%;
+        bottom: 0;
+        width: 90%;
+        padding: 0 5%;
+        border-bottom: .1rem dotted #d4d2d2;
+        transform: translate(50%, 50%);
+        -webkit-transform: translate(50%, 50%);
+        z-index: 10;
+    }
+}
+
+.dotted-title {
+    padding: 0 0 0 15px;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 4px;
+        height: 80%;
+        background-color: $blue-theme;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        z-index: 10;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        right: 0;
+        width: 100%;
+        border-bottom: .1rem dotted #d4d2d2;
+        z-index: 10;
+    }
+}
+
+
+/************** Blue net input ******************/
+
+.blue-net {
+    position: relative;
+    font-weight: 400;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    .blue-net-title {
+        position: absolute;
+        top: -20px;
+        left: 30px;
+        padding: 0 12px;
+        background: $white-color;
+        color: $blue-theme;
+        text-transform: initial;
+        font-size: 1.3rem !important;
+        font-weight: 500;
+        margin-bottom: 0;
+        z-index: 10;
+        @media (max-width: 992px) {
+            position: static;
+            width: 100%;
+            text-align: center;
+            padding: 0;
+        }
+    }
+}
+
+
+/**************** Underline Link ********************/
+
+.b-link {
+    position: relative;
+    color: $white-color !important;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0px;
+        width: 0;
+        height: 2px;
+        background: $blue-theme;
+        transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        z-index: 10;
+    }
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+
+/******************* Title with link ********************/
+
+.link-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: $blue-theme;
+    padding-bottom: 1rem;
+    p,
+    div,
+    span {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    a {
+        color: $blue-theme;
+    }
+}
+
+
+/************** Animation - Fade in up ****************/
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation: all 1s ease-in-out;
+    -webkit-animation: all 1s ease-in-out;
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    opacity: 0;
+}
+
+
+/************** Footer ****************/
+
+footer {
+    text-transform: uppercase;
+    background: $middle-color;
+    color: $white-color;
+    font-size: 0.85rem;
+    margin-top: 40px;
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    padding: 15px;
+    width: 100%;
+    justify-content: center;
+    li,
+    .nav-item {
+        color: #fff;
+        font-size: .8rem;
+        font-weight: 600;
+        padding: 0 10px;
+    }
+    a,
+    .nav-link {
+        padding: 0;
+        color: #fff;
+        font-size: .8rem;
+        font-weight: 600;
+        &:hover {
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+    .wrap-footer {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        background-color: $white-color;
+        color: middle-color;
+        padding: 30px 5px 10px;
+        text-transform: initial;
+        &:before {
+            content: '';
+            position: absolute;
+            top: calc(1rem + 38px);
+            right: 50%;
+            width: 80%;
+            height: 1px;
+            background-color: #eee;
+            padding: 0 5%;
+            transform: translate(50%, 50%);
+            -webkit-transform: translate(50%, 50%);
+            -moz-transform: translate(50%, 50%);
+            z-index: 10;
+            @media (max-width: 992px) {
+                display: none;
+            }
+        }
+        .nav-link {
+            color: #5b5959;
+            padding: 0;
+            &:hover {
+                color: $blue-theme;
+                transition: all .5s ease-in-out;
+                -webkit-transition: all .5s ease-in-out;
+            }
+        }
+        @media (max-width: 992px) {
+            padding: 20px 20px 0 20px;
+        }
+    }
+}

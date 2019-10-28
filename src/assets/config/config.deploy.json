@@ -1,0 +1,6 @@
+{
+    "apiServer": {
+        "url": "$API_URL",
+        "access_token": "$ACCESS_TOKEN"
+    }
+}

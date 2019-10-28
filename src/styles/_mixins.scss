@@ -1,0 +1,159 @@
+/********** Background picture *********/
+
+@mixin background-img($img-size, $img-width, $img-height) {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $img-size;
+  width: $img-width;
+  height: $img-height;
+}
+
+/*********** Background color ***********/
+
+@mixin background-color($bg-color, $bg-color-hover) {
+  background-color: $bg-color;
+  color: $white-color;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-color-hover;
+    color: $white-color;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+  }
+}
+
+@mixin background-element($bg-color) {
+  background-color: $bg-color;
+  color: $white-color;
+}
+
+/*********** Left Menu Navlink ***********/
+
+@mixin flexcolumn-background-navlink($flexcolumn-bg-color, $flexcolumn-bg-hover) {
+  >.nav-link {
+    background-color: $flexcolumn-bg-color;
+
+    @media (max-width: 992px) {
+      color: $flexcolumn-bg-color;
+
+      &:after {
+        background: $flexcolumn-bg-color !important;
+      }
+    }
+  }
+
+  &:hover {
+    .nav-link {
+      background-color: $flexcolumn-bg-hover;
+      transition: all .2s ease-in-out;
+      -webkit-transition: all .2s ease-in-out;
+    }
+  }
+
+  ul {
+    li {
+      a {
+        background-color: $flexcolumn-bg-color;
+
+        &:hover {
+          background-color: $flexcolumn-bg-hover;
+          transition: all .2s ease-in-out;
+          -webkit-transition: all .2s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+/************** Buttons *****************/
+
+@mixin button($button-color, $button-hover) {
+  color: $white-color;
+  border-color: $button-color;
+  background-color: $button-color;
+
+  &:hover {
+    color: $white-color;
+    border-color: $button-hover;
+    background-color: $button-hover;
+  }
+
+  &:focus {
+    -webkit-box-shadow: 0 0 0 3px rgba($button-color, 0.5);
+    box-shadow: 0 0 0 3px rgba($button-color, 0.5);
+  }
+
+  &:disabled {
+    background-color: $button-color;
+    border-color: $button-color;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled):not(.disabled):active {
+    color: $white-color;
+    background-color: $button-hover;
+    border-color: $button-hover;
+    // background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+  }
+}
+
+@mixin dropdown-toggle {
+  color: $white-color;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+}
+
+/************ Outline Buttons ***********/
+
+@mixin button-outline($color, $color2) {
+  background-color: transparent;
+  // background-image: none;
+  border-color: $color;
+  color: $color;
+  border-width: 2px;
+
+  &:hover {
+    color: #fff;
+    background-color: $color;
+    border-color: $color;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba($color, 0.25);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba($color, 0.25);
+  }
+
+  &:focus {
+    -webkit-box-shadow: 0 0 0 3px rgba($color, 0.5) !important;
+    box-shadow: 0 0 0 3px rgba($color, 0.5) !important;
+  }
+
+  &:disabled {
+    color: $color;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  &:not(:disabled):not(.disabled):active {
+    color: $color2;
+    background-color: $color;
+    border-color: $color;
+
+    &:focus {
+      @include no-box-shadow;
+    }
+  }
+}
+
+
+/************ No box-shadow ***********/
+
+@mixin no-box-shadow {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}

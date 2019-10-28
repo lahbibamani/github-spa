@@ -1,0 +1,14 @@
+<div class="offset-md-3">
+    <div class="row">
+        <h4>{{'SEARCH.TITLE' | translate}}</h4>
+    </div>
+    <div class="row">
+        <div class="md-form mt-0 md-8">
+            <input class="form-control" type="text" aria-label="Search" [(ngModel)]="username"
+                [placeholder]="'SEARCH.PLACEHOLDER' | translate">
+        </div>
+
+        <button type="button" class="btn btn-primary offset-md-1 md-2" [routerLink]="'users/'+username"><i
+                class="fas fa-search"></i>&nbsp;{{ 'SEARCH.SEARCH_BTN' | translate }}</button>
+    </div>
+</div>

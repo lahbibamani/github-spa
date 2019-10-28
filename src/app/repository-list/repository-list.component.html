@@ -1,0 +1,30 @@
+<div class="card" style="width:60rem;margin:20px 0 24px 0">
+  <div class="row" *ngIf="repos$ | async as repos; else loading">
+    <div class="col-lg-10 col-12 mb-2">
+      <div>
+        <p class="badge-p">{{repos.total_count || 0}} {{ 'REPOS.TITLE' | translate}}</p>
+        <input [(ngModel)]="searchText" [placeholder]="'REPOS.SEARCH' | translate">
+        <ngb-pagination *ngIf='repos.total_count != 0' [collectionSize]="repos.total_count"
+          [pageSize]="params.perPage" [(page)]="params.page" aria-label="Default pagination"
+          (pageChange)="didChangePage()" [maxSize]="5" [rotate]="true"></ngb-pagination>
+        
+        <!-- <div class="pl-3" *ngIf="(repos.items | filter : 'name' : searchText)?.length === 0; else items">
+            {{'REPOS.EMPTY_RESULT' | translate}}
+        </div> -->
+      </div>
+      <ul *ngFor="let repo of repos.items | filter : 'name' : searchText">
+        <li>
+          <p>{{repo.name}}</p>
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal"
+            (click)="setSelectedRepo(repo)">
+            {{ 'REPOS.DETAILS' | translate}} >
+          </button>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</div>
+<ng-template #noItems>{{ 'REPOS.EMPTY' | translate}}</ng-template>
+<app-repository-details #detailsChild id="myModal" class="modal"></app-repository-details>

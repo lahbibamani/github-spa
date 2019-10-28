@@ -1,0 +1,454 @@
+/****************** Alerts ********************/
+
+.alert.alert-info {
+  @include background-element($blue-theme);
+}
+
+.alert.alert-success {
+  @include background-element($success-color);
+}
+
+.alert.alert-warning {
+  @include background-element($warning-color);
+}
+
+.alert.alert-danger {
+  @include background-element($error-color);
+}
+
+
+/******************** Badges ********************/
+
+.badge.badge-1 {
+  @include background-element($blue-theme);
+}
+
+.badge.badge-2 {
+  @include background-element($blue2-theme);
+}
+
+.badge.badge-3 {
+  @include background-element($yellow-theme);
+}
+
+.badge.badge-4 {
+  @include background-element($green-theme);
+}
+
+.badge.badge-5 {
+  @include background-element($red-theme);
+}
+
+.badge.badge-success {
+  @include background-element($success-color);
+}
+
+.badge.badge-error {
+  @include background-element($error-color);
+}
+
+.badge.badge-light {
+  background-color: $light-color;
+  color: $dark-button-color;
+}
+
+.badge.badge-middle {
+  @include background-element($middle-color);
+}
+
+.badge.badge-dark {
+  @include background-element($dark-color);
+}
+
+
+/**************** Background Color *******************/
+
+.bg-1,
+a.bg-1 {
+  @include background-color($blue-theme, $bluetheme-hover);
+}
+
+.bg-2,
+a.bg-2 {
+  @include background-color($blue2-theme, $blue2theme-hover);
+}
+
+.bg-3,
+a.bg-3 {
+  @include background-color($yellow-theme, $yellowtheme-hover);
+}
+
+.bg-4,
+a.bg-4 {
+  @include background-color($green-theme, $greentheme-hover);
+}
+
+.bg-5,
+a.bg-5 {
+  @include background-color($red-theme, $redtheme-hover);
+}
+
+.bg-6,
+a.bg-6 {
+  @include background-color($brun-theme, $bruntheme-hover);
+}
+
+.bg-success,
+a.bg-success {
+  @include background-color($success-color, $successcolor-hover);
+}
+
+.bg-error,
+a.bg-error {
+  @include background-color($error-color, $errorcolor-hover);
+}
+
+.bg-light,
+a.bg-light {
+  @include background-color($light-color, $lightcolor-hover);
+}
+
+.bg-middle,
+a.bg-middle {
+  @include background-color($middle-color, $middlecolor-hover);
+}
+
+.bg-dark,
+a.bg-dark {
+  @include background-color($dark-color, $darkcolor-hover);
+}
+
+
+/****************** Buttons *********************/
+
+.btn.btn-1 {
+  @include button($blue-theme, $bluetheme-hover);
+}
+
+.btn.btn-2 {
+  @include button($blue2-theme, $blue2theme-hover);
+}
+
+.btn.btn-3 {
+  @include button($yellow-theme, $yellowtheme-hover);
+}
+
+.btn.btn-4 {
+  @include button($green-theme, $greentheme-hover);
+}
+
+.btn.btn-5 {
+  @include button($red-theme, $redtheme-hover);
+}
+
+.btn.btn-success {
+  @include button($success-color, $successcolor-hover);
+}
+
+.btn.btn-error {
+  @include button($error-color, $errorcolor-hover);
+}
+
+.btn.btn-light {
+  @include button($light-color, $lightcolor-hover);
+}
+
+.btn.btn-middle {
+  @include button($middle-color, $middlecolor-hover);
+}
+
+.btn.btn-dark {
+  @include button($dark-color, $darkcolor-hover);
+}
+
+
+/************ Buttons | Dropdown *************/
+
+.show {
+  >.btn.btn-1.dropdown-toggle {
+    @include dropdown-toggle;
+    background-color: #002c6b;
+    border-color: $bluetheme-hover;
+  }
+
+  >.btn.btn-2.dropdown-toggle {
+    @include dropdown-toggle;
+    background-color: #3d76e1;
+    border-color: $blue2theme-hover;
+  }
+
+  >.btn.btn-3.dropdown-toggle {
+    @include dropdown-toggle;
+    background-color: #f5b348;
+    border-color: $yellowtheme-hover;
+  }
+
+  >.btn.btn-4.dropdown-toggle {
+    @include dropdown-toggle;
+    background-color: #7faa58;
+    border-color: $greentheme-hover;
+  }
+
+  >.btn.btn-5.dropdown-toggle {
+    @include dropdown-toggle;
+    background-color: #fe3130;
+    border-color: $redtheme-hover;
+  }
+
+  >.btn.btn-success.dropdown-toggle {
+    @include dropdown-toggle;
+    background-color: #23923d;
+    border-color: #1e7e34;
+  }
+
+  >.btn.btn-error.dropdown-toggle {
+    @include dropdown-toggle;
+    background-color: #c12546;
+    border-color: #ab213e;
+  }
+
+  >.btn.btn-light.dropdown-toggle {
+    @include dropdown-toggle;
+    color: $dark-button-color;
+    background-color: #e9ecef;
+    border-color: #dae0e5;
+  }
+
+  >.btn.btn-middle.dropdown-toggle {
+    @include dropdown-toggle;
+    background-color: $middlecolor-hover;
+    border-color: #414040;
+  }
+
+  >.btn.btn-dark.dropdown-toggle {
+    @include dropdown-toggle;
+    background-color: #292d32;
+    border-color: #1d2124;
+  }
+}
+
+
+/************** Outline Buttons ***************/
+
+.btn.btn-outline-1 {
+  @include button-outline($blue-theme, $white-color);
+}
+
+.btn.btn-outline-2 {
+  @include button-outline($blue2-theme, $white-color);
+}
+
+.btn.btn-outline-3 {
+  @include button-outline($yellow-theme, $dark-button-color);
+}
+
+.btn.btn-outline-4 {
+  @include button-outline($green-theme, $dark-button-color);
+}
+
+.btn.btn-outline-5 {
+  @include button-outline($red-theme, $white-color);
+}
+
+.btn.btn-outline-succes {
+  @include button-outline($success-color, $white-color);
+}
+
+.btn.btn-outline-error {
+  @include button-outline($error-color, $white-color);
+}
+
+.btn.btn-outline-light {
+  @include button-outline($light-color, $dark-button-color);
+}
+
+.btn.btn-outline-middle {
+  @include button-outline($middle-color, $white-color);
+}
+
+.btn.btn-outline-dark {
+  @include button-outline($dark-color, $white-color);
+}
+
+
+/********* Outline Buttons | Dropdown ************/
+
+.show {
+  >.btn.btn-outline-1.dropdown-toggle {
+    color: $white-color;
+    background-color: $blue-theme;
+    border-color: $blue-theme;
+
+    &:focus {
+      @include no-box-shadow;
+    }
+  }
+
+  >.btn.btn-outline-2.dropdown-toggle {
+    color: $white-color;
+    background-color: $blue2-theme;
+    border-color: $blue2-theme;
+
+    &:focus {
+      @include no-box-shadow;
+    }
+  }
+
+  >.btn-outline-3.dropdown-toggle {
+    color: $dark-button-color;
+    background-color: $yellow-theme;
+    border-color: $yellow-theme;
+
+    &:focus {
+      @include no-box-shadow;
+    }
+  }
+
+  >.btn.btn-outline-4.dropdown-toggle {
+    color: $dark-button-color;
+    background-color: $green-theme;
+    border-color: $green-theme;
+
+    &:focus {
+      @include no-box-shadow;
+    }
+  }
+
+  >.btn.btn-outline-5.dropdown-toggle {
+    color: $white-color;
+    background-color: $red-theme;
+    border-color: $red-theme;
+
+    &:focus {
+      @include no-box-shadow;
+    }
+  }
+
+  >.btn.btn-outline-success.dropdown-toggle {
+    color: $white-color;
+    background-color: $success-color;
+    border-color: $success-color;
+
+    &:focus {
+      @include no-box-shadow;
+    }
+  }
+
+  >.btn.btn-outline-error.dropdown-toggle {
+    color: $white-color;
+    background-color: $error-color;
+    border-color: $error-color;
+
+    &:focus {
+      @include no-box-shadow;
+    }
+  }
+
+  >.btn.btn-outline-light.dropdown-toggle {
+    color: $dark-button-color;
+    background-color: $light-color;
+    border-color: $light-color;
+
+    &:focus {
+      @include no-box-shadow;
+    }
+  }
+
+  >.btn.btn-outline-middle.dropdown-toggle {
+    color: $white-color;
+    background-color: $middle-color;
+    border-color: $middle-color;
+
+    &:focus {
+      @include no-box-shadow;
+    }
+  }
+
+  >.btn.btn-outline-dark.dropdown-toggle {
+    color: $white-color;
+    background-color: $dark-color;
+    border-color: $dark-color;
+
+    &:focus {
+      @include no-box-shadow;
+    }
+  }
+}
+
+
+/****************** Text *******************/
+
+.text-1 {
+  color: $blue-theme;
+}
+
+.text-2 {
+  color: $blue2-theme;
+}
+
+.text-3 {
+  color: $yellow-theme;
+}
+
+.text-4 {
+  color: $red-theme;
+}
+
+.text-grey {
+  color: $middle-color;
+}
+
+.text-success {
+  color: $success-color;
+}
+
+.text-warning {
+  color: $warning-color;
+}
+
+.text-danger {
+  color: $error-color;
+}
+
+
+/**************** Progress bar *****************/
+
+.progress-bar.progress-bar-1 {
+  background-color: $blue-theme;
+}
+
+.progress-bar.progress-bar-2 {
+  background-color: $blue2-theme;
+}
+
+.progress-bar.progress-bar-3 {
+  background-color: $yellow-theme;
+}
+
+.progress-bar.progress-bar-4 {
+  background-color: $green-theme;
+}
+
+.progress-bar.progress-bar-5 {
+  background-color: $red-theme;
+}
+
+.progress-bar.progress-bar-success {
+  background-color: $success-color;
+}
+
+.progress-bar.progress-bar-error {
+  background-color: $error-color;
+}
+
+.progress-bar.progress-bar-light {
+  background-color: $light-color;
+}
+
+.progress-bar.progress-bar-middle {
+  background-color: $middle-color;
+}
+
+.progress-bar.progress-bar-dark {
+  background-color: $dark-color;
+}

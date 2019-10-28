@@ -1,0 +1,19 @@
+<a [routerLink]="'/'" alt="" class="back">
+    <i class="fas fa-angle-left"></i><span>{{'REPOS.RETURN' | translate}}</span>
+</a>
+<div *ngIf="user$ | async as user; else loading">
+    <ng-container *ngIf="user.length != 0; else noItems" class="row">
+        <div class="md-4 card" style="width:20rem;margin:20px 0 24px 0">
+            <img class="card-img-top" [attr.alt]="user.login" [src]="user.avatar_url" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">{{user.name || user.login }}</h4>
+            </div>
+        </div>
+        <app-repository-list class="md-8" [username]="username"></app-repository-list>
+    </ng-container>
+</div>
+
+<ng-template #loading>
+    <ngx-spinner bdColor="rgba(1,1,1,0.3)" size="medium" color="#fff" type="line-spin-fade">
+    </ngx-spinner>
+</ng-template>
